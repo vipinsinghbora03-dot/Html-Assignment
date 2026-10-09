@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+
+<body align="center">
+    <h1>Hotel Room Booking Form</h1>
+    <form action="#" method="post">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" placeholder="Enter your full name" name="full_name">
+        <br></br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br></br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        <br></br>
+        <!--radio buttons-->
+        <label for="gender">Gender:</label>
+        <lable for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" required>Male
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female" required>Female
+            <lable for="other">Other:</label>
+                <input type="radio" id="other" name="gender" value="other" required>Other
+                <br></br>
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin">
+                <br></br>
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout">
+                <br></br>
+                <label for="room_type">Room Type:</label>
+                <select id="room_type" name="room_type">
+                    <option value="">Select Room Type</option>
+                    <option value="single">Single</option>#Sever get selected value as Single
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <br></br>
+                <label for="guests">No. of Guests:</label>
+                <input type="number" id="guests" name="guests" placeholder="Enter number of guests" min="1" max="10">
+                <br></br>
+                <label for="specialrequests" title="Special Requests">Special Requests:</label>
+                <textarea id="specialrequests" rows="4" cols="50" name="specialrequests"
+                    placeholder="Enter any special requests"></textarea>
+                <br></br>
+                <input type="submit" value="Book Room">
+                <input type="reset" value="Reset Form">
+    </form>
+
+</body>
+
+</html>
