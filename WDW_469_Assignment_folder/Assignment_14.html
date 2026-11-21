@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Table</title>
+
+    <style>
+        .table-container{
+            overflow-x:auto;
+        }
+
+        table{
+            border-collapse:collapse;
+            width:100%;
+        }
+
+        td,th{
+            border:1px solid black;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+
+<table>
+    <tr>
+        <th>Student</th>
+        <th>Details</th>
+    </tr>
+
+    <tr>
+        <td>Rahul</td>
+
+        <td>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>BCA</td>
+                    <td>1st</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+</div>
+
+</body>
+</html>
